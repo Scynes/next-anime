@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-text {
+    font-size: clamp(1.5rem, 4rem, 7.5vw);
+}

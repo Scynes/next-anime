@@ -1,5 +1,7 @@
+import Hero from '@/components/Hero';
+
 export default () => {
     return (
-        <h1>Hello</h1>
+        <Hero />
     );
 }
