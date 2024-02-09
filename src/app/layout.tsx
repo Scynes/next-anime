@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { PropsWithChildren } from 'react';
 
 import "@/globals.css";
+import Hero from '@/components/Hero';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,10 @@ export default function RootLayout(properties: PropsWithChildren) {
     return (
         <html lang="en">
             <body className={inter.className}>
-                { children }
+                <Hero />
+                <main className={ 'p-12' }>
+                    { children }
+                </main>
             </body>
         </html>
     );
